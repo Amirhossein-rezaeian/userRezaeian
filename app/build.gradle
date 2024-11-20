@@ -6,12 +6,12 @@ plugins {
 android {
     namespace 'tech.ula'
 
-    compileSdkVersion 34
+    compileSdkVersion 35
 
     defaultConfig {
         applicationId "tech.ula"
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 35
 
         versionCode rootProject.ext.appVersionCode
         versionName rootProject.ext.appVersionName
@@ -38,8 +38,8 @@ android {
         debug {
             debuggable true
             minifyEnabled false
-            enableUnitTestCoverage true
-            enableAndroidTestCoverage true
+            enableUnitTestCoverage false
+            enableAndroidTestCoverage false
         }
         release {
             debuggable false

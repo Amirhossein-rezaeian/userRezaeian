@@ -3,12 +3,12 @@ buildscript {
     ext {
         def vcode = (int)(((new Date().getTime()/1000) - 1559347200) / 10)
         appVersionCode = vcode
-        appVersionName = '23.09.13'
+        appVersionName = '24.11.20'
         orientation = "unspecified"
         provider_authority = "tech.ula.provider.fileprovider"
         support_assets_version = "v1.3.4"
-        kotlin_version = '1.9.0'
-        android_plugin = '8.5.2'
+        kotlin_version = '1.9.20'
+        android_plugin = '8.7.2'
         jacoco_version = '0.8.4'
         navigation_version = '2.5.0'
     }
@@ -21,7 +21,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
         classpath "org.jacoco:org.jacoco.core:$jacoco_version"
-        classpath 'de.undercouch:gradle-download-task:3.4.3'
+        classpath 'de.undercouch:gradle-download-task:5.6.0'
     }
 }
 
